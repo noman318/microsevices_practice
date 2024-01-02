@@ -6,6 +6,6 @@
   "password": "root",
   "database": "node_admin",
   "entities": ["src/entity/*.js"],
-  "logging": true,
+  "logging": false,
   "synchronize": true
 }
