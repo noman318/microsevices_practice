@@ -30,7 +30,7 @@ createConnection()
 
     app.get("/api/products", async (req: Request, res: Response) => {
       const allProducts = await productRepository.find();
-      res.json(allProducts);
+      return res.json(allProducts);
     });
 
     app.post("/api/products", async (req: Request, res: Response) => {

@@ -63,8 +63,7 @@ var PORT = 8000;
                 case 0: return [4 /*yield*/, productRepository.find()];
                 case 1:
                     allProducts = _a.sent();
-                    res.json(allProducts);
-                    return [2 /*return*/];
+                    return [2 /*return*/, res.json(allProducts)];
             }
         });
     }); });
